@@ -1,10 +1,457 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lulu Cao | Career & Leadership Coach</title>
+
+<style>
+
+:root {
+  --bg: #faf9f6;
+  --text: #222;
+  --gray: #666;
+  --line: #e8e4dc;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+  -apple-system,
+  BlinkMacSystemFont,
+  "Helvetica Neue",
+  Arial,
+  "PingFang SC",
+  sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: auto;
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:30px 0;
+}
+
+.logo {
+  font-size:20px;
+  font-weight:600;
+}
+
+nav a {
+  text-decoration:none;
+  color:#333;
+  margin-left:25px;
+  font-size:15px;
+}
+
+
+/* Hero */
+
+.hero {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+  padding:90px 0;
+}
+
+.hero h1 {
+  font-size:60px;
+  line-height:1.1;
+  letter-spacing:-1px;
+  margin:0 0 25px;
+}
+
+.hero p {
+  color:var(--gray);
+  font-size:20px;
+}
+
+
+.button {
+  display:inline-block;
+  margin-top:30px;
+  background:#222;
+  color:white;
+  padding:15px 32px;
+  border-radius:50px;
+  text-decoration:none;
+}
+
+
+.photo {
+  width:100%;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  border-radius:25px;
+}
+
+
+
+/* Sections */
+
+section {
+  padding:80px 0;
+}
+
+
+.title {
+  font-size:38px;
+  margin-bottom:40px;
+}
+
+
+.two-column {
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+
+}
+
+
+.text {
+color:var(--gray);
+font-size:18px;
+}
+
+
+
+.cards {
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+
+}
+
+
+.card {
+
+background:white;
+padding:35px;
+border-radius:22px;
+border:1px solid var(--line);
+
+}
+
+
+.card h3 {
+
+margin-top:0;
+
+}
+
+
+
+/* Contact */
+
+.contact {
+
+background:white;
+padding:50px;
+border-radius:25px;
+border:1px solid var(--line);
+
+}
+
+
+form {
+
+display:grid;
+gap:18px;
+
+}
+
+
+input,
+textarea {
+
+padding:15px;
+border:1px solid #ddd;
+border-radius:12px;
+font-size:16px;
+font-family:inherit;
+
+}
+
+
+textarea {
+
+height:150px;
+
+}
+
+
+button {
+
+background:#222;
+color:white;
+border:none;
+padding:16px;
+border-radius:50px;
+font-size:16px;
+cursor:pointer;
+
+}
+
+
+footer {
+
+text-align:center;
+padding:40px 0;
+color:#777;
+font-size:14px;
+
+}
+
+
+
+
+@media(max-width:800px){
+
+.hero,
+.two-column,
+.cards {
+
+grid-template-columns:1fr;
+
+}
+
+
+.hero h1 {
+
+font-size:42px;
+
+}
+
+
+nav a {
+
+display:none;
+
+}
+
+
+.contact {
+
+padding:30px;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+
 <body>
 
-<h1>Hello Lulu Cao</h1>
 
-<p>This is my website.</p>
+<div class="container">
 
-</body>
-</html>
+
+<nav>
+
+<div class="logo">
+Lulu Cao Coaching
+</div>
+
+
+<div>
+
+<a href="#about">About</a>
+<a href="#services">Coaching</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+<h1>
+Create a career that feels meaningful.
+</h1>
+
+
+<p>
+I help professionals and leaders gain clarity,
+build confidence, and navigate career transitions
+with intention.
+</p>
+
+
+<a class="button" href="#contact">
+Work With Me
+</a>
+
+
+</div>
+
+
+
+<div>
+
+<img class="photo"
+src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
+alt="Coach">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="about">
+
+
+<h2 class="title">
+About Me
+</h2>
+
+
+<div class="two-column">
+
+
+<div>
+
+<img class="photo"
+src="https://images.unsplash.com/photo-1544005313-94ddf0286df2"
+alt="Portrait">
+
+</div>
+
+
+
+<div class="text">
+
+<p>
+Hi, I'm Lulu. I am a career and leadership coach
+supporting professionals through moments of change,
+growth, and uncertainty.
+</p>
+
+
+<p>
+My coaching combines reflection, strategy, and practical
+action to help you understand what matters most and
+move forward with confidence.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="services">
+
+
+<h2 class="title">
+How I Help
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+Career Clarity
+</h3>
+
+<p>
+Explore your strengths, values, and possibilities
+to make thoughtful career decisions.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Leadership Growth
+</h3>
+
+<p>
+Develop your leadership presence, communication,
+and strategic thinking.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Career Transition
+</h3>
+
+<p>
+Navigate change and design the next chapter
+of your professional journey.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="contact">
+
+
+<h2 class="title">
+Let's Connect
+</h2
