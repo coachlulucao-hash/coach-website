@@ -11,254 +11,381 @@
 
 <style>
 
-/* =====================
-   RESET
-===================== */
+:root {
+  --bg: #faf9f6;
+  --text: #1c2433;
+  --muted: #5f6878;
+  --accent: #9b8358;
+}
+
 
 * {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Helvetica, Arial, sans-serif;
-  color: #1c2940;
-  background: #ffffff;
-  line-height: 1.6;
+
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+
+  font-family:
+  -apple-system,
+  BlinkMacSystemFont,
+  "Helvetica Neue",
+  Arial,
+  sans-serif;
+
+  line-height:1.65;
+
 }
 
-img {
-  max-width: 100%;
-}
 
-
-/* =====================
-   LAYOUT
-===================== */
 
 .container {
-  width: 88%;
-  max-width: 1400px;
-  margin: 0 auto;
-}
 
-.section {
-  padding: 70px 0;
+  width:88%;
+  margin:0 auto;
+
 }
 
 
-/* =====================
-   NAVIGATION
-===================== */
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 0;
-}
 
-nav a {
-  color: #1c2940;
-  text-decoration: none;
-  margin-left: 25px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:30px 0;
+
 }
 
 
-/* =====================
-   TYPOGRAPHY
-===================== */
 
-h1 {
-  font-size: clamp(48px, 6vw, 72px);
-  line-height: 1.1;
-  font-weight: 700;
-  margin: 0 0 30px;
+.logo {
+
+  font-size:20px;
+  font-weight:700;
+  letter-spacing:1px;
+
 }
 
 
-.section h2 {
-  font-size: clamp(36px, 4vw, 48px);
-  line-height: 1.2;
-  font-weight: 700;
-  margin: 0 0 35px;
+
+.nav-links a {
+
+  text-decoration:none;
+  color:var(--text);
+  margin-left:28px;
+  font-size:14px;
+
 }
 
 
-h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
 
 
-p {
-  font-size: 20px;
-  line-height: 1.8;
-  margin: 0 0 25px;
-}
-
-
-/* =====================
-   HERO
-===================== */
+/* Hero */
 
 .hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 60px;
-  padding: 80px 0;
+
+  display:flex;
+  flex-wrap:wrap;
+  gap:6vw;
+  align-items:center;
+
+  padding:50px 0 70px;
+
 }
-
-
 .hero > div {
-  flex: 1 1 400px;
-  min-width: 0;
+  flex:1 1 400px;
+  min-width:0;
 }
+
+
+.hero h1 {
+
+  font-size:clamp(38px,5vw,60px);
+  line-height:1.15;
+
+  font-weight:600;
+  letter-spacing:-1px;
+
+  margin:0 0 25px;
+
+}
+
+
+
+.hero p {
+
+  font-size:18px;
+  color:var(--muted);
+
+}
+
 
 
 .hero img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: 18px;
+
+  display:block;
+  width:100%;
+  max-width:100%
+  min-width:0;
+  height:auto;
+
+  aspect-ratio:4/5;
+  object-fit:cover;
+
+  border-radius:18px;
+
 }
 
 
-/* =====================
-   ABOUT
-===================== */
 
-.about-content {
-  max-width: 850px;
+.button {
+
+  display:inline-block;
+
+  margin-top:25px;
+
+  padding:14px 30px;
+
+  background:var(--text);
+  color:white;
+
+  text-decoration:none;
+
+  border-radius:5px;
+
+  font-size:14px;
+
 }
 
 
-.about-content ul {
-  padding-left: 30px;
-  margin: 30px 0;
+
+
+/* General sections */
+
+
+.section {
+
+  padding:55px 0;
+
 }
 
 
-.about-content li {
-  font-size: 20px;
-  margin-bottom: 12px;
+
+.section-title {
+
+  font-size:34px;
+  font-weight:600;
+
+  margin-bottom:35px;
+
 }
 
 
-/* =====================
-   TESTIMONIAL
-===================== */
-
-.testimonial {
-  margin-bottom: 45px;
-}
-
-.testimonial p {
-  font-size: 21px;
-}
 
 
-/* =====================
-   BUTTONS
-===================== */
+/* Testimonials */
 
-a.btn,
-button,
-input[type="submit"] {
 
-  display: inline-block;
+.testimonials {
 
-  background: #1c2940;
-  color: white;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
 
-  border: none;
-  border-radius: 10px;
+  gap:40px;
 
-  padding: 15px 30px;
-
-  font-size: 18px;
-  font-family: inherit;
-
-  text-decoration: none;
-
-  cursor:pointer;
 }
 
 
-/* =====================
-   FORM
-===================== */
 
-input,
-textarea {
+.quote {
+
+  font-size:17px;
+
+}
+
+
+
+.quote-author {
+
+  margin-top:18px;
+
+  font-size:14px;
+
+  color:var(--accent);
+
+  font-weight:600;
+
+}
+
+
+
+/* About */
+  .about-content ul{
+    margin:30px 0;
+    padding-left:25px;
+  }
+  .about-content li{
+    margin-bottom:12px;
+  }
+
+.about-text {
+
+  font-size:18px;
+
+}
+
+
+
+.credentials {
+
+  color:var(--accent);
+
+  font-weight:600;
+
+}
+
+
+
+/* Contact */
+
+
+.contact-form {
+
+  display:flex;
+  flex-direction:column;
+
+  gap:15px;
+
+}
+
+
+
+.contact-form input,
+.contact-form textarea {
 
   width:100%;
 
-  padding:18px;
-
-  font-size:18px;
-  font-family:inherit;
+  padding:14px;
 
   border:1px solid #ddd;
-  border-radius:10px;
 
-  margin-bottom:20px;
+  border-radius:8px;
+
+  font-size:15px;
+
 }
 
 
-/* =====================
-   FOOTER
-===================== */
+
+.contact-form textarea {
+
+  height:140px;
+
+}
+
+
+
+.contact-form button {
+
+  width:max-content;
+
+  padding:14px 30px;
+
+  border:none;
+
+  border-radius:5px;
+
+  background:var(--text);
+
+  color:white;
+
+  cursor:pointer;
+  font-size:14px;
+  font-family:inherit;
+
+}
+
+
+
+/* Long stories */
+
+
+.story {
+
+  margin-bottom:50px;
+
+  font-size:18px;
+
+}
+
+
+
+.story-author {
+
+  color:var(--accent);
+
+  font-weight:600;
+
+}
+
+
 
 footer {
 
-  padding:40px 0;
+  padding:35px 0;
 
   text-align:center;
 
-  font-size:16px;
+  color:var(--muted);
+
+  font-size:14px;
 
 }
 
 
-/* =====================
-   MOBILE
-===================== */
+
+/* Mobile */
+
 
 @media(max-width:800px){
 
-  .section {
-    padding:50px 0;
-  }
 
+.hero {
 
-  .hero {
-    flex-direction:column;
-  }
-
-
-  h1 {
-    font-size:42px;
-  }
-
-
-  .section h2 {
-    font-size:34px;
-  }
-
-
-  p {
-    font-size:18px;
-  }
+grid-template-columns:1fr;
 
 }
+
+
+.testimonials {
+
+grid-template-columns:1fr;
+
+}
+
+
+.nav-links {
+
+display:none;
+
+}
+
+
+.hero h1 {
+
+font-size:40px;
+
+}
+
+
+}
+
 </style>
 
 </head>
