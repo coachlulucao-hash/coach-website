@@ -87,14 +87,11 @@ nav {
 
 
 /* Hero */
-* {
- min-width:0 !important;
-}
 
 .hero {
 
-  display:grid;
-  grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);
+  display:flex;
+  flex-wrap:wrap;
   gap:6vw;
   align-items:center;
 
@@ -102,6 +99,7 @@ nav {
 
 }
 .hero > div {
+  flex:1 1 400px;
   min-width:0;
 }
 
