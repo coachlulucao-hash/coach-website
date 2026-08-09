@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -10,11 +11,10 @@
 <style>
 
 :root {
-  --bg: #fbfaf7;
-  --text: #1c2433;
-  --muted: #5f6878;
-  --accent: #a58a5a;
-  --white: #ffffff;
+  --bg: #faf9f6;
+  --text: #1d2433;
+  --muted: #606979;
+  --accent: #9b8358;
 }
 
 * {
@@ -22,261 +22,174 @@
 }
 
 body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
     "Helvetica Neue",
     Arial,
     sans-serif;
-  line-height: 1.6;
+  line-height:1.7;
 }
 
+
 .container {
-  width: min(1100px, 88%);
-  margin: auto;
+  width:min(1080px,88%);
+  margin:auto;
 }
 
 
 /* Navigation */
 
 nav {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:28px 0;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 0;
+
 }
+
 
 .logo {
-  font-size:22px;
-  font-weight:700;
-  letter-spacing:1px;
+
+font-size:20px;
+font-weight:700;
+letter-spacing:1px;
+
 }
 
+
 .nav-links a {
-  text-decoration:none;
-  color:var(--text);
-  margin-left:28px;
-  font-size:14px;
+
+text-decoration:none;
+color:var(--text);
+margin-left:28px;
+font-size:14px;
+
 }
+
+
 
 
 /* Hero */
 
+
 .hero {
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:60px;
-  align-items:center;
-  padding:55px 0 70px;
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:65px;
+align-items:center;
+padding:55px 0 65px;
+
 }
 
 
 .hero h1 {
-  font-size:56px;
-  line-height:1.12;
-  letter-spacing:-1px;
-  margin:0 0 25px;
-  font-weight:600;
+
+font-size:58px;
+line-height:1.15;
+letter-spacing:-1.5px;
+font-weight:600;
+margin:0 0 25px;
+
 }
 
 
 .hero p {
-  font-size:18px;
-  color:var(--muted);
-  max-width:460px;
+
+font-size:18px;
+color:var(--muted);
+max-width:460px;
+
 }
 
 
 .hero img {
-  width:100%;
-  height:560px;
-  object-fit:cover;
-  border-radius:18px;
+
+width:100%;
+height:560px;
+object-fit:cover;
+border-radius:18px;
+
 }
 
 
 .button {
-  display:inline-block;
-  margin-top:25px;
-  padding:14px 30px;
-  background:var(--text);
-  color:white;
-  text-decoration:none;
-  font-size:14px;
-  border-radius:4px;
+
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:var(--text);
+color:white;
+text-decoration:none;
+border-radius:4px;
+font-size:14px;
+
 }
+
+
+
 
 
 /* Testimonials */
 
-.testimonials {
-  background:#f3f1eb;
-  padding:45px;
-  border-radius:20px;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:35px;
-  margin-bottom:70px;
+.section {
+
+padding:55px 0;
+
 }
+
+
+.section-title {
+
+font-size:34px;
+font-weight:600;
+margin-bottom:35px;
+
+}
+
+
+
+.testimonials {
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:35px;
+
+}
+
 
 
 .quote {
-  font-size:16px;
-}
 
-
-.quote strong {
-  display:block;
-  margin-top:18px;
-  font-size:14px;
-  color:var(--accent);
-  font-weight:600;
-}
-
-
-/* Approach */
-
-.approach {
-  text-align:center;
-  padding:20px 0 65px;
-}
-
-
-.approach h2 {
-  font-size:36px;
-  font-weight:600;
-  margin-bottom:20px;
-}
-
-
-.approach p {
-  color:var(--muted);
-  font-size:18px;
-  max-width:700px;
-  margin:auto;
-}
-
-
-.focus {
-  display:flex;
-  justify-content:center;
-  gap:55px;
-  margin-top:35px;
-}
-
-
-.focus span {
-  font-weight:600;
-}
-
-
-/* About */
-
-.about {
-  display:grid;
-  grid-template-columns:260px 1fr;
-  gap:55px;
-  align-items:center;
-  margin-bottom:70px;
-}
-
-
-.about img {
-  width:100%;
-  border-radius:18px;
-}
-
-
-.about h2 {
-  font-size:36px;
-  margin:0 0 10px;
-}
-
-
-.credentials {
-  color:var(--accent);
-  font-weight:600;
-  margin-bottom:20px;
-}
-
-
-.about p {
-  color:var(--muted);
-  font-size:17px;
-}
-
-
-/* Contact */
-
-.contact {
-  background:var(--text);
-  color:white;
-  padding:55px;
-  border-radius:20px;
-  margin-bottom:40px;
-}
-
-
-.contact h2 {
-  font-size:38px;
-  margin-top:0;
-}
-
-
-.contact p {
-  opacity:.8;
-}
-
-
-.contact input,
-.contact textarea {
-
-width:100%;
-padding:14px;
-margin-top:12px;
-border:none;
-border-radius:8px;
-font-size:15px;
-
-}
-
-
-.contact textarea {
-height:120px;
-}
-
-
-.contact button {
-
-margin-top:15px;
-padding:14px 30px;
-border:none;
-background:white;
+font-size:16px;
 color:var(--text);
-border-radius:4px;
-font-weight:600;
 
 }
 
 
-footer {
-text-align:center;
-padding:30px 0;
+
+.quote-author {
+
+margin-top:18px;
 font-size:14px;
-color:var(--muted);
+font-weight:600;
+color:var(--accent);
+
 }
 
 
-/* Mobile */
+
+
 
 @media(max-width:800px){
 
-.hero,
-.about,
-.testimonials {
+
+.hero {
 
 grid-template-columns:1fr;
 
@@ -284,35 +197,41 @@ grid-template-columns:1fr;
 
 
 .hero h1 {
+
 font-size:40px;
+
 }
 
 
 .hero img {
+
 height:420px;
-}
-
-
-.focus {
-
-flex-direction:column;
-gap:15px;
 
 }
 
 
-.contact {
+.testimonials {
 
-padding:35px;
-
-}
+grid-template-columns:1fr;
 
 }
 
+
+.nav-links {
+
+display:none;
+
+}
+
+
+}
 
 </style>
 
 </head>
+
+
+
 <body>
 
 
@@ -328,13 +247,19 @@ LULU CAO
 
 <div class="nav-links">
 
-<a href="#approach">Approach</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
+<a href="#about">
+About
+</a>
+
+<a href="#contact">
+Contact
+</a>
 
 </div>
 
 </nav>
+
+
 
 
 
@@ -343,21 +268,22 @@ LULU CAO
 
 <div>
 
+
 <h1>
-Clear thinking.
-Confident decisions.
+Career clarity.
+Leadership growth.
 Meaningful impact.
 </h1>
 
 
 <p>
 I partner with professionals and leaders
-to navigate career transitions, strengthen
-leadership, and create meaningful change.
+to navigate career transitions, make confident
+decisions, and create work that feels meaningful.
 </p>
 
 
-<a class="button" href="#contact">
+<a href="#contact" class="button">
 Book a Conversation
 </a>
 
@@ -365,9 +291,10 @@ Book a Conversation
 </div>
 
 
+
 <div>
 
-<img src="YOUR-PHOTO.jpg" alt="Lulu Cao">
+<img src="lulu.JPG" alt="Lulu Cao">
 
 </div>
 
@@ -376,132 +303,65 @@ Book a Conversation
 
 
 
-<section class="testimonials">
-
-
-<div class="quote">
-
-“Lulu helped me see possibilities
-I couldn’t see myself. She gave me
-the courage to make changes I had
-been avoiding for a long time.”
-
-<strong>
-— Chen, Designer
-</strong>
-
-</div>
 
 
 
-<div class="quote">
 
-“Lulu creates a space where you can
-think deeply and be honest. I always
-leave conversations with more clarity
-and confidence.”
+<section class="section">
 
-<strong>
-— Product Manager
-</strong>
 
-</div>
+<h2 class="section-title">
+Client Reflections
+</h2>
+
+
+
+<div class="testimonials">
 
 
 
 <div class="quote">
 
-“She asked the right questions and
-helped me refine my direction.
-I’m now in a role that aligns with
-who I am and what I value.”
+“Lulu helped me see possibilities I couldn’t
+see myself. She created a space where I could
+think clearly and make decisions with confidence.”
 
-<strong>
-— Engineering Leader
-</strong>
-
+<div class="quote-author">
+— Client, Technology Professional
 </div>
-
-
-</section>
-<section id="approach" class="approach">
-
-
-<h2>
-How I Help
-</h2>
-
-
-<p>
-I work with professionals and leaders who are
-navigating moments of change — whether they are
-reconsidering their career direction, stepping into
-leadership, or seeking greater impact.
-</p>
-
-
-<div class="focus">
-
-<span>
-Career Transitions
-</span>
-
-<span>
-Leadership Growth
-</span>
-
-<span>
-Strategic Decisions
-</span>
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section id="about" class="about">
-
-
-<div>
-
-<img src="YOUR-PHOTO-2.jpg" alt="Lulu Cao">
 
 </div>
 
 
 
-<div>
 
-<h2>
-Lulu Cao
-</h2>
+<div class="quote">
 
+“Through coaching, I gained clarity about
+what I wanted and the courage to take action
+toward my next chapter.”
 
-<div class="credentials">
-
-ICF PCC · Career & Leadership Coach
+<div class="quote-author">
+— Client, Product Leader
+</div>
 
 </div>
 
 
-<p>
-Former technology leader at Riot Games,
-with experience building teams, developing
-leaders, and navigating complex organizational
-challenges.
-</p>
 
 
-<p>
-I combine strategic thinking, deep listening,
-and practical tools to help professionals
-create meaningful and sustainable change
-in their careers.
-</p>
+<div class="quote">
+
+“Lulu asks thoughtful questions that help
+you discover your own answers and move
+forward with confidence.”
+
+<div class="quote-author">
+— Client, Engineering Leader
+</div>
+
+</div>
+
 
 
 </div>
@@ -509,60 +369,299 @@ in their careers.
 
 </section>
 
+<section id="about" class="section">
 
 
-
-
-
-<section id="contact" class="contact">
-
-
-<h2>
-Let's explore what's possible.
+<h2 class="section-title">
+About Lulu
 </h2>
 
 
-<p>
-Book a conversation to discuss what you are
-navigating and how coaching may support your
-next chapter.
+<p style="
+font-size:20px;
+max-width:760px;
+color:var(--text);
+">
+
+Lulu Cao is an ICF PCC certified Career &
+Leadership Coach and former technology leader
+at Riot Games.
+
 </p>
 
 
 
-<form action="https://formspree.io/f/YOUR_FORM_ID"
-method="POST">
+<p style="
+font-size:17px;
+max-width:760px;
+color:var(--muted);
+">
+
+She works with professionals and leaders
+who are navigating career transitions,
+leadership challenges, and moments of uncertainty.
+
+Her coaching combines strategic thinking,
+deep listening, and practical action to help
+clients gain clarity, build confidence, and
+create meaningful change.
+
+</p>
+
+
+
+<p style="
+font-size:16px;
+color:var(--accent);
+font-weight:600;
+">
+
+Career transitions · Leadership growth · Strategic decisions
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="contact" class="section">
+
+
+<h2 class="section-title">
+Let's Talk
+</h2>
+
+
+<p style="
+max-width:600px;
+color:var(--muted);
+font-size:18px;
+">
+
+If you are thinking about your next career move,
+a leadership challenge, or a decision you want
+to approach differently, I would love to hear from you.
+
+</p>
+
+
+
+
+<form
+action="https://formspree.io/f/YOUR_FORM_ID"
+method="POST"
+style="
+max-width:600px;
+margin-top:35px;
+">
 
 
 <input
 type="text"
 name="name"
 placeholder="Your Name"
+style="
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:15px;
+"
 >
+
 
 
 <input
 type="email"
 name="email"
 placeholder="Your Email"
+style="
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:15px;
+"
 >
+
+
 
 
 <textarea
 name="message"
 placeholder="What would you like to explore?"
+style="
+width:100%;
+height:130px;
+padding:14px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:15px;
+"
 ></textarea>
 
 
-<button type="submit">
+
+
+<button
+type="submit"
+style="
+margin-top:18px;
+padding:14px 30px;
+background:var(--text);
+color:white;
+border:none;
+border-radius:4px;
+font-size:14px;
+">
+
 Send Message
+
 </button>
+
 
 
 </form>
 
 
 </section>
+
+
+
+
+
+
+
+
+<section class="section">
+
+
+<h2 class="section-title">
+Client Stories
+</h2>
+
+
+
+<div style="
+max-width:760px;
+">
+
+
+
+<div style="
+margin-bottom:45px;
+">
+
+
+<p style="
+font-size:18px;
+">
+
+"Lulu helped me recognize patterns that
+were keeping me stuck. Through our work,
+I gained a clearer understanding of what
+I wanted and the confidence to pursue it."
+
+</p>
+
+
+<p style="
+color:var(--accent);
+font-weight:600;
+">
+
+— Client, Technology Leader
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div style="
+margin-bottom:45px;
+">
+
+
+<p style="
+font-size:18px;
+">
+
+"Before coaching, I knew something needed
+to change but didn't know where to start.
+Lulu helped me explore possibilities,
+make decisions, and take action."
+
+</p>
+
+
+<p style="
+color:var(--accent);
+font-weight:600;
+">
+
+— Client, Product Professional
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div style="
+margin-bottom:45px;
+">
+
+
+<p style="
+font-size:18px;
+">
+
+"Lulu brings both empathy and strategic
+thinking. She helped me understand my
+strengths, communicate my value, and
+approach my career with more intention."
+
+</p>
+
+
+<p style="
+color:var(--accent);
+font-weight:600;
+">
+
+— Client, Engineering Leader
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
 
 
 
